@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "practice-my-nodejs",
   "version": "0.0.0",
   "description": "",
   "main": "build/src/index.js",
@@ -9,8 +9,11 @@
   ],
   "license": "Apache-2.0",
   "keywords": [],
+  "engines": {
+    "node": "^12.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "gts lint",
     "clean": "gts clean",
     "compile": "tsc",
@@ -20,8 +23,11 @@
     "posttest": "npm run lint"
   },
   "devDependencies": {
+    "@types/jest": "^28.1.4",
     "@types/node": "^14.11.2",
     "gts": "^3.1.0",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
     "typescript": "^4.0.3"
   },
   "dependencies": {
