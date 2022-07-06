@@ -5,7 +5,8 @@ const path = require('path');
 const myFile = new MyFile();
 const myPath = path.join('assets', 'test.txt');
 const myPathErr = path.join('assets', 'test1.txt');
-myFile.readFileSync(myPath);
+const content = myFile.readFileSync(myPath);
+console.log('content', content);
 
 myFile
   .readFile(myPath)

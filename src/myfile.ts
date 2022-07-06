@@ -5,8 +5,7 @@ class MyFile {
   constructor() {}
 
   public readFileSync(filepath: string) {
-    const content = fs.readFileSync(filepath, 'utf8');
-    console.log('content:', content);
+    return fs.readFileSync(filepath, 'utf8');
   }
 
   public async readFile(filepath: string) {
